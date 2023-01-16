@@ -1,0 +1,186 @@
+@font-face {
+  font-family: NeueMontreal;
+  src: url(neue-montreal/NeueMontreal-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: RadioGrotesk;
+  src: url(RadioGrotesk-Regular.otf) format("truetype");
+}
+
+@font-face {
+  font-family: Roxborough CF;
+  src: url(Roxborough\ CF.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  overflow: hidden;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "NeueMontreal";
+  text-transform: uppercase;
+  padding: 0 2rem;
+}
+
+.logo {
+  padding: 0.4em 0.8em;
+}
+
+.link {
+  border: 2px solid red;
+  border-radius: 6px;
+  padding: 0.4em 0.8em;
+}
+
+.spline {
+  position: absolute;
+  top: 10vh;
+  width: 40%;
+  height: 100%;
+}
+
+@media (max-width: 900px) {
+  #date-info {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .spline {
+    top: 20%;
+    width: 100%;
+    transform: scale(0.5);
+  }
+}
+
+.hero-section {
+  width: 100%;
+  height: 90vh;
+  background: #ffc822;
+  border-radius: 1em 1em 0 0;
+  padding: 2em;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.h1 {
+  font-size: 12vw;
+  letter-spacing: -4px;
+}
+
+.row-1 .row-3 {
+  font-family: "RadioGrotesk";
+}
+
+.row-2 {
+  font-family: "Roxborough CF";
+  font-style: italic;
+}
+
+.row-1 {
+  align-items: flex-start;
+}
+
+.row-1 .p {
+  text-transform: uppercase;
+  padding: 0 2rem;
+  font-size: 24px;
+}
+
+.row-2 {
+  padding-left: 5em;
+}
+
+.span {
+  width: 300px;
+  font-size: 14px;
+}
+
+@media (max-width: 900px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .row-1 {
+    flex-direction: column-reverse;
+  }
+
+  .h1 {
+    font-size: 15vw;
+  }
+}
+
+.pre-loader {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "RadioGrotesk";
+  font-size: 2vw;
+  letter-spacing: 2px;
+}
+.content span {
+  font-family: Roxborough CF;
+  font-style: italic;
+}
+
+.text {
+  margin-bottom: 1em;
+}
+
+.loader {
+  width: 450px;
+  height: 2px;
+  background: red;
+}
+
+@media (max-width: 900px) {
+  .content {
+    font-size: 5vw;
+  }
+}
